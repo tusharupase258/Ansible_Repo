@@ -93,5 +93,3 @@ This repository is licensed under the MIT License – feel free to use, share, a
 > *Automation is freedom – take control of your infrastructure like never before!* 🌟
 
 ---
-
-This version adds a more personalized touch, with dynamic and engaging language to create a unique, approachable feel for users exploring your repository.
