@@ -1,0 +1,12 @@
+---
+- name: File module
+  hosts: remotevms
+
+  tasks:
+  - name: Create directory on remote
+    file:
+     path: /tmp/newfolder
+     state: absent
+     owner: tusharansiblevm2
+     group: tusharansiblevm2
+     mode: u=rwx,g=rw,o=r

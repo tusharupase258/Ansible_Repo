@@ -1,0 +1,11 @@
+---
+- name: User Management remove user
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: User removal
+    user:
+      name: tushar
+      state: absent
+      remove: yes

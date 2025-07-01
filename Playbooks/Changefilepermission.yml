@@ -1,0 +1,9 @@
+---
+- name: change permission on files
+  hosts: remotevms
+
+  tasks:
+  - name: changing permission on files
+    file:
+      path: /tmp/newfile34.txt
+      mode: u=rwx,g=r,o=r

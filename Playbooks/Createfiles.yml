@@ -1,0 +1,11 @@
+---
+- name: File module
+  hosts: all
+
+  tasks:
+  - name: Create file on remote
+    file: /tmp/newfile34.txt
+    state: touch
+    owner:
+    group:
+    mode: u=rwx,g=rw,o=r

@@ -1,0 +1,17 @@
+---
+- name: Disable cronjob
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Add cron job
+    cron:
+      name: Run test script
+      minute: 00
+      hour: 1
+      day: 15
+      month: "*"
+      weekday: "*"
+      user: tusharansiblevm2
+      job: /tmp/script/test.sh
+      disabled: yes

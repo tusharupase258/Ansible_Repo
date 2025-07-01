@@ -1,0 +1,10 @@
+---
+- name: tusharplaybook1
+  hosts: localhost
+
+  tasks:
+    - name: Test Connectivity
+      ping:
+
+    - name: Print Output
+      debug: msg="Ready to go"

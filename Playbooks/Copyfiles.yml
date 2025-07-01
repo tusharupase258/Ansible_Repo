@@ -1,0 +1,13 @@
+---
+- name: Copying files to remote
+  hosts: remotevms
+  become: yes
+
+  tasks:
+    - name: Copying files
+      copy:
+        src: /tmp/file1.txt
+        dest: /tmp/
+        owner: tusharansiblevm2
+        group: tusharansiblevm2
+        mode: "u=rwx,g=rwx,o=rw"

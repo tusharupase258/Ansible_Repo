@@ -1,0 +1,10 @@
+---
+- name: Run script on remotevms
+  hosts: remotevms
+
+  tasks:
+  - name: run script
+    shell: ./test.sh >> test.log
+    args:
+      chdir: /tmp/scripts
+      creates: test.log

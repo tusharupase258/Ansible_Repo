@@ -1,0 +1,16 @@
+---
+- name: Nginx_Installation_Start_And_Enable
+  hosts: Localhost
+  become: true
+
+  tasks:
+    - name: Installing Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Starting and Enabling Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: true
